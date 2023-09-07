@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.Colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+}
+
+.ColorCol {
+  width: 20vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ColorCol__text {
+  font-size: 28px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.border {
+  border: 5px solid white;
+  width: calc(20vw - 10px) !important;
+  height: calc(100vh - 10px) !important;
+}
+
+.buttons {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.buttons__container {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.buttons__btn {
+  padding: 5px 15px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.buttons__btn:hover {
+  background-color: gray;
+  color: white;
+}
